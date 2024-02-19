@@ -97,3 +97,9 @@
     display: none;
   }
 }
+
+.hamburger_btn {
+  background: none;
+  border: none;
+  outline: none;
+}

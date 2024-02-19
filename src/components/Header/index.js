@@ -1,5 +1,6 @@
 import {Link, withRouter} from 'react-router-dom'
 import Cookies from 'js-cookie'
+
 import {GiHamburgerMenu} from 'react-icons/gi'
 
 import './index.css'
@@ -21,7 +22,9 @@ const Header = props => {
             alt="website logo"
           />
         </Link>
-        <GiHamburgerMenu size={16} color="#475569" />
+        <button type="button" className="hamburger_btn">
+          <GiHamburgerMenu size={16} color="#475569" />
+        </button>
       </div>
       <div className="nav-bar-large-container">
         <Link to="/">

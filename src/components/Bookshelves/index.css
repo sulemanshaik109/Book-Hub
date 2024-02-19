@@ -1,0 +1,38 @@
+.bookshelves-container {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  width: 264px;
+  height: 36px;
+  background-color: #edeff1;
+  border: 1px solid #cbd5e1;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.search-input {
+  height: 36px;
+  width: 212px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 10px;
+  color: #94a3b8;
+  border: 1px solid #cbd5e1;
+  outline: none;
+}
+
+.search-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 34px;
+}
