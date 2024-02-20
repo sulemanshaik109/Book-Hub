@@ -1,16 +1,20 @@
 .login-form-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
+  padding: 32px;
+  background-color: #ffffff;
+  margin: auto;
 }
 
 @media screen and (min-width: 767px) {
   .login-form-container {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: #f5f7fa;
   }
 }
 
@@ -26,9 +30,10 @@
 
 .login-desktop-image {
   width: 50%;
+  height: 100vh;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   .login-desktop-image {
     display: none;
   }
@@ -40,12 +45,32 @@
   margin-top: 16px;
 }
 
+.authentication-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 312px;
+}
+
+@media screen and (min-width: 767px) {
+  .form-container {
+    justify-content: center;
+    width: 499px;
+    background-color: #ffffff;
+    flex-shrink: 0;
+    padding: 64px 48px 64px 48px;
+  }
+  .authentication-container {
+    width: 50%;
+    padding: 64px;
+  }
 }
 
 .input-container {
@@ -112,4 +137,11 @@
   line-height: 18.24px;
   font-weight: 400;
   color: #ef4444;
+}
+
+@media screen and (min-width: 767px) {
+  .logo {
+    width: 141px;
+    height: 48px;
+  }
 }

@@ -130,8 +130,9 @@ class Bookshelves extends Component {
   )
 
   renderBookshelves = () => {
-    const {booksList, searchInput} = this.state
+    const {booksList, searchInput, shelf} = this.state
     const noBooks = booksList.length === 0
+    const bookshelf = bookshelvesList.find(each => each.value === shelf)
 
     return (
       <>
@@ -147,6 +148,9 @@ class Bookshelves extends Component {
           </div>
         ) : (
           <div className="books-list-container">
+            <div className="books-header-container">
+              <h1 className="books-header-heading">{bookshelf.label} Books</h1>
+            </div>
             <ul className="books-list">
               {booksList.map(eachBook => (
                 <BookItem key={eachBook.id} bookData={eachBook} />
@@ -213,8 +217,8 @@ class Bookshelves extends Component {
             </ul>
           </div>
           {this.renderBookshelvesView()}
-          <Footer />
         </div>
+        <Footer />
       </>
     )
   }

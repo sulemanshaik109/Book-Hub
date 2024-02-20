@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 .book-img {
@@ -35,4 +34,20 @@
 
 .link-item {
   text-decoration: none;
+}
+
+@media screen and (min-width: 767px) {
+  .book-img {
+    width: 350px;
+    height: 224px;
+    border-radius: 4px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .author-name {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }

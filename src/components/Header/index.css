@@ -27,7 +27,7 @@
 @media screen and (min-width: 767px) {
   .header-logo {
     width: 133px;
-    height: 41px;
+    height: 37px;
   }
 }
 
@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 24px 100px;
+  padding: 24px 150px;
 }
 
 @media screen and (max-width: 767px) {
@@ -102,4 +102,42 @@
   background: none;
   border: none;
   outline: none;
+}
+
+.mobile-menu {
+  display: flex;
+  align-items: center;
+  padding: 0px 24px;
+  background-color: #f5f7fa;
+}
+
+.mobile-menu-list {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.logout-mobile-btn {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 8px 16px;
+  color: #f8fafc;
+  background-color: #0284c7;
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 37px;
+}
+
+.close-btn {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
 }

@@ -111,19 +111,21 @@ class LoginForm extends Component {
           className="login-desktop-image"
           alt="website login"
         />
-        <form className="form-container" onSubmit={this.submitForm}>
-          <img
-            src="https://res.cloudinary.com/dsbxrn2tj/image/upload/v1707908969/Group_7732_dw8wrb.png"
-            className="logo"
-            alt="login website logo"
-          />
-          <div className="input-container">{this.renderUsernameField()}</div>
-          <div className="input-container">{this.renderPasswordField()}</div>
-          {showSubmitError && <p className="error-message">*{errorMsg}</p>}
-          <button type="submit" className="login-button">
-            Login
-          </button>
-        </form>
+        <div className="authentication-container">
+          <form className="form-container" onSubmit={this.submitForm}>
+            <img
+              src="https://res.cloudinary.com/dsbxrn2tj/image/upload/v1707908969/Group_7732_dw8wrb.png"
+              className="logo"
+              alt="login website logo"
+            />
+            <div className="input-container">{this.renderUsernameField()}</div>
+            <div className="input-container">{this.renderPasswordField()}</div>
+            {showSubmitError && <p className="error-message">*{errorMsg}</p>}
+            <button type="submit" className="login-button">
+              Login
+            </button>
+          </form>
+        </div>
       </div>
     )
   }

@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  background-color: #f5f7fa;
+  padding-top: 64px;
 }
 
 .icons-list {
@@ -20,7 +21,7 @@
 }
 
 .contact-us-text {
-  font-family: HK Grotesk;
+  font-family: 'Roboto';
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
@@ -28,4 +29,5 @@
   text-align: left;
   color: #3d3c3c;
   margin-top: 5px;
+  margin-bottom: 24px;
 }

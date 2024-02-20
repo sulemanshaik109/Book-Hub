@@ -10,7 +10,7 @@
   border-radius: 8px;
 }
 
-.book-details-container {
+.book-data-container {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
@@ -24,6 +24,8 @@
   letter-spacing: 0px;
   text-align: left;
   color: #334155;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .book-author-name {
@@ -34,14 +36,13 @@
   letter-spacing: 0px;
   text-align: left;
   color: #475569;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .rating-container {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
 }
 
 .text {
@@ -52,7 +53,8 @@
   letter-spacing: 0px;
   text-align: left;
   color: #475569;
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .rating {
@@ -65,11 +67,13 @@
   color: #334155;
   margin-left: 5px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 
 .rating-text {
   margin-right: 8px;
+  margin-top: 0px;
+  margin-bottom: 8px;
 }
 
 .status-text {
@@ -80,4 +84,14 @@
   letter-spacing: 0px;
   text-align: left;
   color: #0284c7;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 767px) {
+  .book-item {
+    min-width: 400px;
+  }
+  .book-data-container {
+    align-self: flex-start;
+  }
 }

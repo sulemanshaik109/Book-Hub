@@ -10,7 +10,7 @@ const BookItem = props => {
     <Link to={`/books/${id}`} className="link-item">
       <li className="book-item">
         <img src={coverPic} alt={title} className="book-cover-pic" />
-        <div className="book-details-container">
+        <div className="book-data-container">
           <h1 className="title">{title}</h1>
           <p className="book-author-name">{authorName}</p>
           <div className="rating-container">
